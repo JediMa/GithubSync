@@ -1,0 +1,23 @@
+106980000666	,414,	05aca027	4月16日南京南-金寨D3065，订单号E568254873购票成功，查座席点击http://t.ctrip.cn/G8TlJDu【携程网】
+106980000666	,414,	05aca027	4月15日17:01德安-九江D6354购票成功，订单号E828119212，伍建英二等座04车厢03D号【携程网】
+106980000666	,414,	05aca027	4月18日07:09十堰-重庆北T9购票成功，订单号E895802678，黄微软卧11车厢06号上铺，差价35元1-3个工作日退至您原支付账户【携程网】
+106980000666	,414,	05aca027	4月16日07:06南京南-武汉G1113购票成功，订单号E818015292，殷小琴二等座04车厢09A号【携程网】
+106980000666	,414,	05aca027	4月16日11:03武汉-黄冈西C5611购票成功，订单号E849990281，殷小琴二等座01车厢04F号【携程网】
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=cad2ddc5a3d7aab49952709d6293724ed48ff3a65d5eac75f9d37efaaa467e4d 获取CA1805航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40061006666 06:55:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=5b5b4c16c4996a349d6f674ebed508a8536b61b2a65d3643f9d37efaaa467e4d 获取CA1351航班电子账户余额3291公里。了解更多信息请登录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线4006100666或山航服务热线95369-3。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=35e7f8032c76c71cbd271d03be7602c64cab8e0148b7b902f9d37efaaa467e4d 获取CA1905航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40088086665 15:05:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=59502d8a64e748ee306a00be3cdc2e93f3075e6822b188a8f9d37efaaa467e4d 获取CA1139航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40088086665 21:30:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=9f96a8845ad810f456d4e6416aefba7004c8c00df0623eeaf9d37efaaa467e4d 获取CA4144航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40088086665 18:30:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=373e09a95dc705a5920866b4498c76966ccb9dc5a2a7e014f9d37efaaa467e4d 获取CA1857航班电子账户余额30739公里。了解更多信息请登录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音”会员服务热线4008808666或4006100666。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=59eb1f4f61a2db98c007036f091948c4e9d59e548e645310f9d37efaaa467e4d 获取CA1291航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40088086666 15:20:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=59502d8a64e748ee15a3b35e57e063b6bb195cb60a04ad25f9d37efaaa467e4d 获取CA1139航班电子录"凤凰知音"网站http://ffp.airchina.com.cn或国航无线APP查询，如有疑问可致电国航服务热线95583或"凤5 21:30:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=08960aee084acd1ebd271d03be7602c65a0d3f12da49ddc3f9d37efaaa467e4d 获取CA1830航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40061006666 19:25:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=8ce4fcf3f9ea66b451c043a0e2884a372e3333f539e63327f9d37efaaa467e4d 获取CA1509航班电子录"凤凰知音"网站http://ffp.airchina.com.cn或国航无线APP查询，如有疑问可致电国航服务热线95583或"凤 07:00:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=a4621e553d23e874bd271d03be7602c61b445bea1c8e51dcf9d37efaaa467e4d 获取CA1835航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40061006665 07:30:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=56f66aa6556923b2ae5b9cc2f431d491982a4b2885a7bc60f9d37efaaa467e4d 获取CA1369航班电子fp.airchina.com.cn/cn查询，如有疑问可致电国航服务热线95583或"凤凰知音"会员服务热线4006100666。[6 07:10:00。[中国国航]
+106980000666	,414,	05aca027	京十三陵长陵或定陵售票处取票入园。取票时间：08:30~16:00。您可点击 https://t.ctrip.cn/G5xlYzC 查看订单详情。如需帮助请致电400-821-6666,05。【携程网】
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=ef34d5f59e902e2fb8e9b4c9c53eb0bfe0335c9bea546bf7f9d37efaaa467e4d 获取CA8202航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40088086666 05:30:00。[中国国航]
+106980000666	,414,	05aca027	4月17日重庆北-阳新D2234，订单号E956837612购票成功，查座席点击http://t.ctrip.cn/G8sRQw5【携程网】
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=8579855f6c2eae233e3f3756c686f429e1ec27d6811182b7f9d37efaaa467e4d 获取CA1879航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40061006666 05:45:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=b9621d04f6f17d89c48f929712eca446cac6458c223db574f9d37efaaa467e4d 获取CA1575航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40088086666 09:00:00。[中国国航]
+95583	,414,	05aca027	您已成功办理乘机登记手续，您可以点击 http://www.airchina.com.cn/www/e.do?p=59eb1f4f61a2db9851c043a0e2884a3740e5cce08f6c0e36f9d37efaaa467e4d 获取CA1291航班电子录"凤凰知音"网站http://ffp.airchina.com.cn查询，如有疑问可致电"凤凰知音"会员服务热线40088086666 15:20:00。[中国国航]
