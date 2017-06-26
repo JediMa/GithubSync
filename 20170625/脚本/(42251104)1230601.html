@@ -1,0 +1,20 @@
+<mactchs id="42251104">
+<!-- 订单E075586252,阿依木沙古丽·斯马依您已购4月15日7566次3车55号莎车20:29开。【铁路客服】 -->
+<rmatch>订单</rmatch>
+<rcatch key="ordernum_arr" type="ordernum_complex"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="name_arr" type="string" anymax="20"/>
+<rmatch>[您你]已购</rmatch>
+<rcatch key="departuredate_arr" type="date"/>
+<rcatch key="trainnumber" type="trainnumber"/>
+<rcatch key="carriage" type="carriage"/>
+<arraymark>
+<rmatch array-sep="true">、</rmatch>
+<rcatch key="seat" type="crgseat"/>
+</arraymark>
+<rcatch key="departure_arr" type="string" anymax="10"/>
+<rcatch key="departuretime_arr" type="time"/>
+<rmatch>开</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="sign">铁路客服</rmatch>
+</mactchs>

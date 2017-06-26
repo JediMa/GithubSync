@@ -1,0 +1,18 @@
+<mactchs id="42251103">
+<!-- 【同程旅游】您预订的长沙南-合肥南G1128次火车票 ，取票号EC54799847，4月15日18:04发车，请注意乘车时间。 -->
+<rmatch type="sign">同程旅游</rmatch>
+<rmatch>[你您]预订的</rmatch>
+<rcatch key="departure_arr" type="string" anymax="10"/>
+<rmatch type="cbchar"></rmatch>
+<rcatch key="destination_arr" type="string" anymax="10"/>
+<rcatch key="trainnumber" type="trainseat"/>
+<rmatch>火车票</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>取票号</rmatch>
+<rcatch key="serialnum" type="ordernum_complex"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="departuredate_arr" type="date"/>
+<rcatch key="departuretime_arr" type="time"/>
+<rmatch>发车</rmatch>
+</mactchs>

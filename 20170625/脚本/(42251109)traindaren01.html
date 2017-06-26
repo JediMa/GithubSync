@@ -1,0 +1,26 @@
+<mactchs id="42251109">
+<!-- 【火车票达人】您预订的 4月15日 23:20出发的K96（沈阳-盘锦）已订好，座位是12车078号,12车079号，订单号E350136264 -->
+<rmatch type="sign">火车票达人</rmatch>
+<rmatch>[您你]预订的</rmatch>
+<rcatch key="departuredate_arr" type="date"/>
+<rmatch type="space"></rmatch>
+<rcatch key="departuretime_arr" type="time"/>
+<rmatch>出发的</rmatch>
+<rcatch key="trainnumber" type="trainnumber"/>
+<rmatch type="bracket"></rmatch>
+<rcatch key="departure_arr" type="string" anymax="10"/>
+<rmatch type="cbchar"></rmatch>
+<rcatch key="destination_arr" type="string" anymax="10"/>
+<rmatch type="bracket"></rmatch>
+<rmatch>已订好</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>座位是</rmatch>
+<arraymark>
+<rmatch array-sep="true">[,.，。]</rmatch>
+<rcatch key="carriage" type="carriage"/>
+<rcatch key="seat" type="trainseat"/>
+</arraymark>
+<rmatch>[,.，。]</rmatch>
+<rmatch>订单号</rmatch>
+<rcatch key="ordernum_arr" type="ordernum_complex"/>
+</mactchs>

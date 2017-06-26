@@ -1,0 +1,30 @@
+<mactchs id="42251105">
+<!-- 【飞猪提醒】出票成功!4月16日 13:11Z111/Z114 长春-湛江西 乘车人:刘军开,薛继峰,硬卧_15_18号中铺, 硬卧_15_22号中铺.取票号E897482527,差价46.0元将退至原付款账户,退款进度点击 tb.cn/yzw1rpw -->
+<rmatch type="sign">飞猪提醒</rmatch>
+<rmatch>出票成功</rmatch>
+<rmatch>[!！]</rmatch>
+<rcatch key="departuredate_arr" type="date"/>
+<rmatch type="space"></rmatch>
+<rcatch key="departuretime_arr" type="time"/>
+<rcatch key="trainnumber" type="trainnumber"/>
+<rmatch type="space"></rmatch>
+<rcatch key="departure_arr" type="string" anymax="10"/>
+<rmatch type="cbchar"></rmatch>
+<rcatch key="destination_arr" type="string" anymax="10"/>
+<rmatch type="space"></rmatch>
+<rmatch>乘车人</rmatch>
+<rmatch type="colon"></rmatch>
+<arraymark>
+<rmatch array-sep="true">[,.，。]</rmatch>
+<rcatch key="name_arr" type="name"/>
+</arraymark>
+<rmatch>[,.，。]</rmatch>
+<arraymark>
+<rmatch array-sep="true">[,.，。]</rmatch>
+<rcatch key="type_seat" type="string" anymax="15"/>
+</arraymark>
+<rmatch>[,.，。]</rmatch>
+<rmatch>取票号</rmatch>
+<rcatch key="ordernum_arr" type="ordernum_complex"/>
+<rmatch>[,.，。]</rmatch>
+</mactchs>

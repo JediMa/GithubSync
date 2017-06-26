@@ -1,0 +1,33 @@
+<mactchs id="42251107">
+<!-- 【飞猪提醒】恭喜，您的订单3214881224365009抢票成功!南宁东-北海 D8301次 发车时间:4月29日 07:30，乘车人:韦昭宁 ,二等座_04_01A号.取票号E663931626,请在发车前凭有效证件到火车站换取车票.飞猪电话4001688688，如需在线帮助请点击 tb.cn/bbr3eUx -->
+<rmatch type="sign">飞猪提醒</rmatch>
+<rmatch type="startwith" anymax="15">恭喜</rmatch>
+<rmatch type="endwith">订单</rmatch>
+<rcatch key="ordernum_arr" type="ordernum_complex"/>
+<rmatch>抢票成功</rmatch>
+<rmatch>[!！]</rmatch>
+<rcatch key="departure_arr" type="string" anymax="10"/>
+<rmatch type="cbchar"></rmatch>
+<rcatch key="destination_arr" type="string" anymax="10"/>
+<rmatch type="space"></rmatch>
+<rcatch key="trainnumber" type="trainnumber"/>
+<rmatch type="space"></rmatch>
+<rmatch>发车时间</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="departuredate_arr" type="date"/>
+<rmatch type="space"></rmatch>
+<rcatch key="departuretime_arr" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>乘车人</rmatch>
+<rmatch type="colon"/>
+<rcatch key="name_arr" type="string" anymax="10"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="type_seat" type="seattype"/>
+<rmatch>_</rmatch>
+<rcatch key="carriage" type="carriage"/>
+<rmatch>_</rmatch>
+<rcatch key="seat" type="trainseat"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>取票号</rmatch>
+<rcatch key="serialnum" type="ordernum_complex"/>
+</mactchs>

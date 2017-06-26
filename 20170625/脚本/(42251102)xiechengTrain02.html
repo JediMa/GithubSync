@@ -1,0 +1,26 @@
+<mactchs id="42251102">
+<!-- 【携程网】您预订的4月15日G457次烟台南(14:13)-威海二等座1张(乘客刘晶:07车厢09C号)购票成功,取票号E398055348,开车前凭购票的有效证件原件到火车站换取纸质车票（二代身份证可至代售点取票)。 -->
+<rmatch>[你您]预订的</rmatch>
+<rcatch key="departuredate_arr" type="date"/>
+<rcatch key="trainnumber" type="trainseat"/>
+<rcatch key="departure_arr" type="string" anymax="10"/>
+<rmatch type="bracket"></rmatch>
+<rcatch key="departuretime_arr" type="time"/>
+<rmatch type="bracket"></rmatch>
+<rmatch type="cbchar"></rmatch>
+<rcatch key="destination_arr" type="string" anymax="10"/>
+<rcatch key="type_seat" type="seattype"/>
+<rcatch key="nums_ticket" type="numunit"/>
+<rmatch type="bracket"></rmatch>
+<rmatch>乘客</rmatch>
+<rcatch key="name_arr" type="name"/>
+<rmatch type="colon"></rmatch>
+<rcatch key="carriage" type="carriage"/>
+<rcatch key="seat" type="trainseat"/>
+<rmatch type="bracket"></rmatch>
+<rmatch>购票成功</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>取票号</rmatch>
+<rcatch key="serialnum" type="ordernum_complex"/>
+<rmatch>[,.，。]</rmatch>
+</mactchs>
