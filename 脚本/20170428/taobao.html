@@ -1,0 +1,21 @@
+<mactchs id="40281435">
+<!-- 【淘宝网】2014-11-30 18:00新世界电影城1号厅《澳门风云》已购票成功。座位：2排08座,2排07座取票码：2014999954999999请到影院天下票仓取票机或联和院线取票机上取票 -->
+<rmatch type="sign" optional="true">淘宝网|淘宝电影|淘票票</rmatch>
+<rcatch key="date" type="date"/>
+<rmatch type="space"/>
+<rcatch key="time" type="time"/>
+<rcatch key="theatrename" type="theatre"/>
+<rcatch key="room" type="filmroom"/>
+<rcatch key="movie" type="string"/>
+<rmatch>已购票成功</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>座位</rmatch>
+<rmatch>[:：]</rmatch>
+<arraymark>
+<rmatch array-sep="true">[,，]</rmatch>
+<rcatch key="seat_arr" type="filmseat"/>
+</arraymark>
+<rmatch>取票码</rmatch>
+<rmatch>[:：]</rmatch>
+<rcatch key="password" type="verifycode"/>
+</mactchs>

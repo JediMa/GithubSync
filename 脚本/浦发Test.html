@@ -1,0 +1,21 @@
+<mactchs id="40070958">
+
+<!-- 您尾号7211的浦发信用卡本月账单人民币11973.78、美元0.00。到期还款日07月15日。回复ZDFQ（空格）卡号末/待续【浦发银行】 -->
+<rmatch>您尾号</rmatch>
+<rcatch key="cardnum" type="cardnum"/>
+<rmatch>的</rmatch>
+<rcatch key="cardname" type="endcard"/>
+
+<rmatch>本月[账帐]单</rmatch>
+<rcatch key="moneytype_overdraft" type="moneytype"/>
+<rcatch key="overdraft" type="money"/>
+<rmatch>、</rmatch>
+<rcatch key="moneytype2_overdraft" type="moneytype"/>
+<rcatch key="foreigncurrencyoverdraft" type="money"/>
+
+<rmatch type="startwith">[，。,.]到期</rmatch>
+<rcatch key="curdate" type="date"/>
+
+<rmatch type="startwith">[,.，。]</rmatch>
+<rmatch type="sign">浦发银行</rmatch>
+</mactchs>

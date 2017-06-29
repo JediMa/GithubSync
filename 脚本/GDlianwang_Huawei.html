@@ -1,0 +1,26 @@
+<mactchs id="41031118">
+<!-- 【广东联网售票】您已购05月01日14:05东莞总站-珠海拱北,车票1张,班次号04431.请凭订单号2017043000006958192取票密码208040和二代身份证提前到出发车站取票乘车,车站联系电话:0769-22701666. -->
+<rmatch type="sign" skip="true">广东联网售票</rmatch>
+<rmatch>[您你]已购</rmatch>
+<rcatch key="departuredate_arr" type="date"/>
+<rcatch key="departuretime_arr" type="time"/>
+<rcatch key="from_place_arr_complex" type="trainstation"/>
+<rmatch>-|到</rmatch>
+<rcatch key="to_place_arr_complex" type="trainstation"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>车票</rmatch>
+<rcatch key="quantity" type="numunit"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>班次号</rmatch>
+<rcatch key="busnum_arr" type="busseat"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="5">订单号</rmatch>
+<rcatch key="ordernum_arr" type="ordernum"/>
+<rmatch>取票密码</rmatch>
+<rcatch key="pw_ticket" type="verifycode"/>
+<rmatch>和</rmatch>
+<rcatch key="ticketvouchers" type="passbook"/>
+<rmatch type="endwith" anymax="2">到</rmatch>
+<rcatch key="add" type="address"/>
+<rmatch>取票</rmatch>
+</mactchs>

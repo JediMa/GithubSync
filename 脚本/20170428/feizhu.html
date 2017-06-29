@@ -1,0 +1,22 @@
+<mactchs id="40281522">
+<!-- 【阿里旅行·去啊】酒店确认提醒：陈某某，05月30日大理古城八千里路酒店上层榻榻米景观大床房第二-全额预付+无早1间2晚，436.00元已确认， 预定成功后，不可变更/取消。云南省大理市大理古城人民路267号（古城第四中学对面）。0872-5365658。卖家电话:0872-5365658或18287286061，阿里旅行·去啊客服400-1688-688 -->
+<rmatch type="include" optional="true">淘宝|阿里|飞猪|天猫</rmatch>
+<rmatch type="startwith">酒店确认提醒</rmatch>
+<rmatch>：</rmatch>
+<rcatch key="subscriber" type="name"/>
+<rmatch>，</rmatch>
+<rcatch key="checkindate" type="date"/>
+<rcatch key="hotelname" type="hotel"/>
+<rcatch key="roomtype" type="roomtype"/>
+<rcatch key="roomnum" type="roomnum"/>
+<rcatch key="nightnum" type="numunit"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="money" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch type="endwith">取消</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="hoteladd" type="address"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="hotelphonenum" type="phone"/>
+<rmatch>[,.，。]</rmatch>
+</mactchs>

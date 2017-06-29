@@ -1,0 +1,16 @@
+<mactchs id="41271507">
+<!-- 【滴滴出租车】亲爱的乘客,您02月05日12:20的出租车实时订单,尚未支付车费5.00元。请抽空在“客户端-我的行程”中找到订单完成支付吧（如已支付,请忽略该条短信） -->
+<rmatch type="sign" optional="true">滴滴出租车|滴滴出行</rmatch>
+<rmatch type="endwith">[您你]</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>的</rmatch>
+<rcatch key="type" type="endwith">订单</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="state" type="endwith">支付</rcatch>
+<rmatch>车费</rmatch>
+<rcatch key="money_pay" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="sign" optional="true">滴滴出租车|滴滴出行</rmatch>
+</mactchs>

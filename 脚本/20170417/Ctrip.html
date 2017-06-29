@@ -1,0 +1,35 @@
+<mactchs id="40171120">
+<!-- 【携程网】预订成功：董珊珊 2017/4/13入住上海同文君享酒店豪华大床房，1间1晚，总价¥829.00，每
+晚双早。4/3 18:00未到店，酒店可能取消订单。酒店地址：四川北路1755号，近海伦西路，T:021-60912666。取消修改请点击手机客户端 t.ctrip.cn/?GkPhiKT7D18 操作或回复"QX44"取消。携程电话： 
+10106666(免长话费)。 -->
+<rmatch type="sign">携程网</rmatch>
+<rmatch type="startwith">预[订定]</rmatch>
+<rmatch>[:：]</rmatch>
+<rcatch key="subscriber" type="name"/>
+<rmatch type="space"/>
+<rcatch key="checkindate" type="date"/>
+<rmatch>入住</rmatch>
+<rcatch key="hotelname" type="hotel"/>
+<rcatch key="roomtype" type="roomtype"/>
+
+<rmatch>[,.，。]</rmatch>
+<rcatch key="roomnum" type="roomnum"/>
+<rcatch key="nightnum" type="numunit"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>总价|价格</rmatch>
+<rcatch key="moneytype" type="moneytype"/>
+<rcatch key="money" type="money"/>
+
+<rmatch type="startwith">[,.，。]</rmatch>
+<rcatch key="date_reserved" type="date"/>
+<rmatch type="space"/>
+<rcatch key="time_reserved" type="time"/>
+
+
+<rmatch type="endwith">地址</rmatch>
+<rmatch>[:：]</rmatch>
+<rcatch key="hoteladd" type="address"/>
+<rmatch type="startwith">[T|Tel|电话]</rmatch>
+<rmatch>[:：]</rmatch>
+<rcatch key="hotelphonenum" type="phone"/>
+</mactchs>

@@ -1,0 +1,26 @@
+<mactchs id="05101027">
+<!--
+您的个人账户0311于2013-12-20 15:23:39网银存入(工资)人民币4467.30元，交易后余额24008.28元【中国银行】
+-->
+<rmatch type="startwith">您的个人账户</rmatch>
+<rcatch key="cardnum" type="cardnum"/>
+<rmatch type="endwith">于</rmatch>
+
+<rcatch key="date" type="date01"/>
+<rmatch type="rqspace"></rmatch>
+<rcatch key="time" type="time01"/>
+
+<rmatch>网银</rmatch>
+<rcatch key="type" type="anyword"/>
+<rmatch>人民币</rmatch>
+<rcatch key="money" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+
+<rmatch>，交易</rmatch>
+<rcatch key="type" type="anyword"/>
+<rmatch>余额</rmatch>
+<rcatch key="balance" type="money"/>
+<rcatch key="unit_balance" type="moneyunit"/>
+<rmatch type="sign">中国银行</rmatch>
+
+</mactchs>

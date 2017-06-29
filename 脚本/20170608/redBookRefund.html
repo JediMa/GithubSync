@@ -1,0 +1,14 @@
+<mactchs id="42091735">
+<!-- 【小红书】支付宝已经处理了¥2.8退款（订单号49619238821971711），你可以在支付宝账单中查看退款进展。回TD退订 -->
+<rmatch type="sign">小红书</rmatch>
+<rcatch key="refundstate" type="endwith" anymax="10">处理</rcatch>
+<rmatch>了</rmatch>
+<rcatch key="moneytype" type="moneytype"/>
+<rcatch key="refund" type="money"/>
+<rmatch>退款</rmatch>
+<rmatch type="bracket"/>
+<rmatch>订单号</rmatch>
+<rcatch key="ordernum" type="ordernum"/>
+<rmatch type="bracket"/>
+<rmatch>[,.，。]</rmatch>
+</mactchs>
