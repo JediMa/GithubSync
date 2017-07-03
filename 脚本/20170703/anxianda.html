@@ -1,0 +1,17 @@
+<mactchs id="43031727">
+<!-- 【安鲜达】亲，您的天猫超市生鲜订单将由王师傅(18501357746)为您配送，预计2小时内送达，请您准备收货喔。 -->
+<rmatch type="sign" optional="true">安鲜达</rmatch>
+<rmatch>亲</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="startwith" anymax="15">[你您]的</rmatch>
+<rmatch>订单将由</rmatch>
+<rcatch key="name_courier" type="name"/>
+<rmatch type="bracket"></rmatch>
+<rcatch key="phonenum" type="phone"/>
+<rmatch type="bracket"></rmatch>
+<rmatch>为[你您]配送</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="state" type="endwith" anymax="20">送达</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="sign" skip="true" optional="true">安鲜达</rmatch>
+</mactchs>
