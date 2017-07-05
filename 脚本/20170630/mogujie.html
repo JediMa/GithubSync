@@ -1,5 +1,5 @@
 <mactchs id="42301458">
-<!-- 您已使用支付宝付款成功，请等待发货。以加入批发商账户自动扣款、系统异常等理由发送链接、二维码的都是骗子！【蘑菇街】 -->
+<!-- 【蘑菇街】您已使用招商银行-储蓄卡-8122付款成功，请等待发货。以产品质量（甲醛、过敏）、加入批发商账户、付款及系统异常等理由退款或打款的都是骗子！ -->
 <rmatch type="sign">蘑菇街</rmatch>
 <rmatch>[你您]已使用</rmatch>
 <rcatch key="paystate" type="endwith" anymax="15">卡</rcatch>
@@ -7,6 +7,6 @@
 <rcatch key="cardnum" type="cardnum"/>
 <rcatch key="paystate" type="endwith" anymax="10" concatTo="true">成功</rcatch>
 <rmatch>[,.，。]</rmatch>
-<rcatch key="tradestate" type="endwith" anymax="20">发货</rcatch>
+<rcatch key="warning" type="endwith" anymax="20" optional="true">发货</rcatch>
 <rmatch>[,.，。]</rmatch>
 </mactchs>
