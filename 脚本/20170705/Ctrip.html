@@ -1,0 +1,37 @@
+<mactchs id="43051430">
+<!-- 【CTRIP】孙某某，您预订的1月2日丽水市客运西站到上海购票成功，发车时间为12:30，建议您至少提前30分钟（节假日提前1小时），凭取票身份证:522729197407023025,取票订单号:1400964426,取票号:146267,取票密码:720929去丽水市客运西站取票。 -->
+<rmatch type="sign" optional="true">CTRIP|携程</rmatch>
+<rcatch key="operator" type="name"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>[你您]预[订定]的</rmatch>
+<rcatch key="departuredate_arr" type="date"/>
+<rcatch key="from_place_arr_complex" type="address"/>
+<rmatch>[至到]</rmatch>
+<rcatch key="to_place_arr_complex" type="address"/>
+<rmatch>购票成功</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>发车时间</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="departuretime_arr" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="startwith" anymax="30">建议</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>凭取票身份证</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="credentialnum" type="personid"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>取票</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch>订单号</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="ordernum_arr" type="ordernum"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>取票号</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="airticketnum_arr" type="ordernum"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>取票密码</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="pw_ticket" type="verifycode"/>
+<rmatch>[去到]</rmatch>
+</mactchs>

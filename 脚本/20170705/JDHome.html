@@ -1,0 +1,22 @@
+<mactchs id="43051123">
+<!-- 亲爱的客户，您的京东到家订单(订单号:714222764000122) ，商品部分缺货（冬瓜(约)1kg/份，1份），此部分商品已为您处理退款。其余商品会尽快为您配送，为您带来的不便敬请谅解。【京东到家】 -->
+<rmatch type="sign" optional="true">京东到家</rmatch>
+<rmatch type="startwith" anymax="15">亲爱的</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="startwith" anymax="15">[你您]的</rmatch>
+<rmatch>订单</rmatch>
+<rmatch type="bracket"></rmatch>
+<rmatch>订单号</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="ordernum" type="ordernum"/>
+<rmatch type="bracket"></rmatch>
+<rmatch type="space"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="returninfo" type="startwith" anymax="30">商品</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="refundstate" type="startwith" anymax="20">此部分</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="endwith" anymax="20">配送</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="sign" skip="true" optional="true">京东到家</rmatch>
+</mactchs>
