@@ -242,7 +242,7 @@
     index="1"
     text="deep">
 <rmark type="optional-start"/>
-<rcatch key="point_available" type="floatnum"/>
+<rcatch key="point_balance" type="floatnum"/>
 <rmark type="optional-end"/>
 </tag>
 

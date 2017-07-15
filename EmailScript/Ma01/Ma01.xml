@@ -43,7 +43,7 @@
 	index="8"
     text="deep">
 <rmark type="optional-start"/>
-<rcatch key="point_available" type="number"/>
+<rcatch key="point_balance" type="number"/>
 <rmark type="optional-end"/>
 </tag>
 
