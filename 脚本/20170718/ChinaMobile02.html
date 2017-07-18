@@ -1,0 +1,52 @@
+<mactchs id="43181131">
+<!-- 您好！截止本月04日13时07分，您的总消费为10.04元，话费余额41.06元。
+您各项套餐消费情况如下：1、18元校园组合优惠包上月结转:已使用流量57.65 M，剩余流量1401.83 M；2、18元校园组合优惠包:已使用流量0.00 M，剩余流量1536.00 M；3、40小时校园WLAN时长（18元校园组合优惠包专用）:已使用0分钟，剩余2400分钟。
+更多服务请直接回复序号：
+1、开通10元包70M流量加油包。
+2、开通周末流量包。
+3、办理更多流量加油包。
+4、办理移动数据流量套餐。
+5、下载流量管家实时查流量。
+6、查询积分及兑换活动。
+7、查询账单。
+8、查询已开通业务
+回复免费。中国移动
+【下载登录“10086”客户端，点击“一键检测”，您的话费、套餐、积分、已订购业务一目了然；还有更多新功能供您使用！（下载链接： http://dx.10086.cn/appall ）】 -->
+<rmatch type="startwith" anymax="15">[你您]好</rmatch>
+<rmatch>截[至止]</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch type="symbol"></rmatch>
+<rmatch type="endwith" anymax="15">总消费</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="totalcharge" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch type="symbol"></rmatch>
+<rmatch>话费余额</rmatch>
+<rcatch key="balance" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch type="symbol"></rmatch>
+<rmatch type="endwith" anymax="25">优惠包上月结转</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch>已使用流量</rmatch>
+<rcatch key="netflow_carryover_used" type="netflow"/>
+<rmatch type="symbol"></rmatch>
+<rmatch>剩余流量</rmatch>
+<rcatch key="netflow_carryover_rest" type="netflow"/>
+<rmatch type="symbol"></rmatch>
+<rmatch type="endwith" anymax="20">组合优惠包</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch>已使用流量</rmatch>
+<rcatch key="netflow_dataplan_u" type="netflow"/>
+<rmatch type="symbol"></rmatch>
+<rmatch>剩余流量</rmatch>
+<rcatch key="netflow_dataplan_r" type="netflow"/>
+<rmatch type="include" anymax="25">时长</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch>已使用</rmatch>
+<rcatch key="wlanused" type="duration"/>
+<rmatch type="symbol"></rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="wlanremain" type="duration"/>
+<rmatch type="symbol"></rmatch>
+</mactchs>
