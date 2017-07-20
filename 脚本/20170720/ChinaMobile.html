@@ -1,0 +1,62 @@
+<mactchs id="43201800">
+<!-- 尊敬的客户，您好！扣除您已产生的消费（43.19元，其中本月消费43.19元、上月及以前的历史消费0.00元）后，您当前欠费13.04元。您有40.00元信用额度，欠费在额度范围内，可享受缓停机服务。 您各项套餐的准实时消费情况如下：
+【语音套餐】包含200分钟，剩余97分钟。
+1、4G上网套餐2014版88档(主资费):包含国内主叫200分钟，剩余97分钟。
+
+【流量套餐】国内流量包含1435.252M，剩余884.565M。
+1、4G上网套餐2014版88档(主资费):包含国内流量(套内)735.252M，剩余700M。
+2、40元700M流量套餐【最新版】:包含国内流量(套内)700M，剩余184.565M。
+
+其中结转流量消费情况如下:
+1、4G上网套餐2014版88档(主资费):包含国内流量(套内)35.252M，已使用完毕。
+ 仅供参考，具体以月结账单为准。
+流量查询办理一站式服务  http://dx.10086.cn/IraUzi  中国移动 -->
+<rmatch type="startwith" anymax="20">尊敬的</rmatch>
+<rmatch>消费</rmatch>
+<rmatch type="bracket"/>
+<rcatch key="paid" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。;；、]</rmatch>
+<rmatch type="endwith" anymax="15">本月消费</rmatch>
+<rcatch key="totalcharge" type="money"/>
+<rmatch type="moneyunit"/>
+<rmatch>[,.，。;；、]</rmatch>
+<rmatch type="endwith" anymax="15">历史消费</rmatch>
+<rcatch key="lastmonthcalls" type="money"/>
+<rmatch type="moneyunit"/>
+<rmatch type="bracket"/>
+<rmatch type="endwith" anymax="15">当前欠费</rmatch>
+<rcatch key="arrears" type="money"/>
+<rmatch type="moneyunit"/>
+<rmatch>[,.，。;；、]</rmatch>
+<rmatch>[你您]有</rmatch>
+<rcatch key="creditmoney" type="money"/>
+<rmatch type="moneyunit"/>
+<rmatch>信用额度</rmatch>
+<rmatch>[,.，。;；、]</rmatch>
+<rcatch key="warning" type="endwith" anymax="25">服务</rcatch>
+<rmatch>[,.，。;；、]</rmatch>
+<rmatch type="endwith" anymax="80">国内主叫</rmatch>
+<rcatch key="totalcalls" type="duration"/>
+<rmatch>[,.，。;；、]</rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="callsremain" type="duration"/>
+<rmatch>[,.，。;；、]</rmatch>
+<rmatch type="endwith" anymax="25">国内流量</rmatch>
+<rmatch optional="true">包含</rmatch>
+<rcatch key="p_domestic" type="netflow"/>
+<rmatch>[,.，。;；、]</rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="p_r_domestic" type="netflow"/>
+<rmatch>[,.，。;；、]</rmatch>
+<rcatch key="detail" type="include" anymax="80">4G上网套餐2014版</rcatch>
+<rmatch>其中结转流量消费</rmatch>
+<rmatch type="endwith" anymax="80">国内流量</rmatch>
+<rmatch type="bracket"></rmatch>
+<rmatch>套内</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="netflow_carryover_domestic" type="netflow"/>
+<rmatch>[,.，。;；、]</rmatch>
+<rcatch key="netflow_carryover_domestic_rest" type="duration"/>
+<rmatch>[,.，。;；、]</rmatch>
+</mactchs>
