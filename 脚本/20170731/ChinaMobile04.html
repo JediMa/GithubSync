@@ -1,0 +1,27 @@
+<mactchs id="43311408" refName="k_ruxia1,k_shuju,k_jiezhuan">
+<!-- 您好！您本月套餐及获赠流量505.00MB，其中上月结转至本月流量为0.00MB；截至07月18日11时56分，已使用移动数据流量82.51MB；流量剩余总量0.00MB，其中移动数据流量剩余0.00MB，详情请点击 http://dx.10086.cn/JFBFfe 查询。回复“888999”立即办理9.99元包1G国内通用流量（流量24小时有效）。【中国移动】 -->
+<rmatch type="startwith" anymax="15">[你您]好</rmatch>
+<rmatch>套餐及获赠流量</rmatch>
+<rcatch key="total_discount" type="netflow"/>
+<rmatch>[,.，。;；]</rmatch>
+<rmatch>其中</rmatch>
+<rcatch key="package_carryover" type="startwith" anymax="10">上月结转</rcatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="netflow_carryover" type="netflow"/>
+<rmatch>[,.，。;；]</rmatch>
+<rmatch>截至</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。;；]</rmatch>
+<rmatch>已使用</rmatch>
+<rcatch key="package_phonenetflow">移动数据流量</rcatch>
+<rcatch key="u_phonenetflow" type="netflow"/>
+<rmatch>[,.，。;；]</rmatch>
+<rmatch>流量剩余总量</rmatch>
+<rcatch key="p_remain" type="netflow"/>
+<rmatch>[,.，。;；]</rmatch>
+<rmatch>其中移动数据流量剩余</rmatch>
+<rcatch key="r_phonenetflow" type="netflow"/>
+<rmatch>[,.，。;；]</rmatch>
+<rmatch>详情请点击</rmatch>
+</mactchs>

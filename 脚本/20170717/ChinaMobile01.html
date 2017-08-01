@@ -1,0 +1,125 @@
+<mactchs id="43170952" refName="k_heji">
+<!-- 尊敬的客户：您好！截止2017年6月30日，您当前余额101.91元,您本期短信账单如下：2017年06月01日 至2017年6月30日，费用合计65.71元。
+   【套餐及固定费】61.0元，其中：
+        30分钟号簿语音专享包赠费每月分返3元: 3.0元，
+        移动基本费: 58.0元，
+    【短彩信费】1.1元，其中：
+        短消息使用费: 1.1元，
+    【语音费】3.61元，其中：
+        本地通话费: 3.61元，
+    【增值业务费】0.0元，
+    【上网费】0.0元，
+    【代收费】0.0元，
+    【其他费用】0.0元，
+查询余额请编辑短信CXYE到10086。【中国移动】 -->
+<rmatch type="startwith" anymax="15">尊敬的</rmatch>
+<rmatch>截[止至]</rmatch>
+<rcatch key="date" type="date"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>[你您]当前余额</rmatch>
+<rcatch key="balance" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>[你您]本期短信账单如下</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="paymentperiod" type="include" anymax="20">[至到]</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>费用合计</rmatch>
+<rcatch key="totalcharge" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch type="bracket"></rmatch>
+<rmatch>套餐及固定费</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="basicrent" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>其中</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<!-- <rmatch type="include" anymax="20">赠费</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="gift" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch>移动基本费</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="money_basic" type="money"/>
+<rmatch type="moneyunit"></rmatch> -->
+<rcatch key="detail" type="include" anymax="50">移动基本费</rcatch>
+<!-- <rmatch>[,.，。]</rmatch> -->
+<rmatch type="space"></rmatch>
+<rmatch type="bracket"></rmatch>
+<rmatch>短彩信费</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="messageoverfee" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>其中</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<!-- <rmatch>短消息使用费</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="smsfee" type="money"/>
+<rmatch type="moneyunit"></rmatch> -->
+<rcatch key="detail" type="include" anymax="20" concatTo="true">短消息使用费</rcatch>
+<!-- <rmatch>[,.，。]</rmatch> -->
+<rmatch type="space"></rmatch>
+
+<rmatch type="bracket"></rmatch>
+<rmatch>语音费</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="callsoverfee" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>其中</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<!-- <rmatch>本地通话费</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="localcallsfee" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch> -->
+<rcatch key="detail" type="include" anymax="20" concatTo="true">本地通话费</rcatch>
+<rmatch>[,.，。]</rmatch> 
+<rmatch type="space"></rmatch>
+
+<rmatch type="bracket"></rmatch>
+<rmatch>增值业务费</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="valueaddedfee" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="space"></rmatch>
+
+<rmatch type="bracket"></rmatch>
+<rmatch>上网费</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="netflowoverfee" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="space"></rmatch>
+
+<rmatch type="bracket"></rmatch>
+<rmatch>代收费</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="collectservicefee" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="space"></rmatch>
+
+<rmatch type="bracket"></rmatch>
+<rmatch>其他费用</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="otherfee" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch type="sign" skip="true" optional="true">中国移动</rmatch>
+</mactchs>

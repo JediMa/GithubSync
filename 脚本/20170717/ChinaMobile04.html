@@ -1,0 +1,13 @@
+<mactchs id="43171416" refName="k_dayue">
+<!-- 尊敬的客户，您好！截至07月03日10时，您所属账户的话费余额是8.25元,话费享优惠，充值更安全！请登陆山东移动掌上营业厅官方地址http://h5.sd.10086.cn/V8mJh21【中国移动】 -->
+<rmatch type="startwith" anymax="20">尊敬的</rmatch>
+<rmatch>截至</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="15">账户的话费余额</rmatch>
+<rmatch type="colon"/>
+<rcatch key="balance" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。]</rmatch>
+</mactchs>

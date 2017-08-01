@@ -1,0 +1,21 @@
+<mactchs id="43171224" refName="k_yucunkuan">
+<!-- 尊敬的客户，您好！截至06月29日12时，您所属账户的话费余额是5.60元,本月可用的赠款额度0.04元,其中当前已用0.04元,话费享优惠，充值更安全！请登陆山东移动掌上营业厅官方地址 http://h5.sd.10086.cn/V8mJh21  -->
+<rmatch type="startwith" anymax="20">尊敬的</rmatch>
+<rmatch>截至</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="20">话费余额</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="balance" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="15">赠款额度</rmatch>
+<rcatch key="grantlimit" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="15">当前已用</rmatch>
+<rcatch key="u_grantlimit" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+</mactchs>

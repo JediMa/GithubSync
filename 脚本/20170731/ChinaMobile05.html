@@ -1,0 +1,23 @@
+<mactchs id="43311551" refName="k_zun,k_yiyong1,k_zengsong2">
+<!-- 【套餐流量提醒】尊敬的客户，您好！您订购的"微信活动赠送100M流量"套餐，包含数据流量100MB，截至7月11日 17:11:0，流量已使用完毕。办理流量包请点击<http://dx.10086.cn/wyblll>，查询话费及流量使用情况请点击<http://dx.10086.cn/wycxll>,或直接回复“22”办理流量包，回复“11”进行查询。【中国移动】 -->
+<rmatch type="sign" optional="true">套餐流量提醒</rmatch>
+<rmatch type="startwith" anymax="15">尊敬的</rmatch>
+<rmatch>[你您]订购的</rmatch>
+<rmatch type="quote"></rmatch>
+<rcatch key="package_phonenetflow" type="startwith" anymax="10">微信活动赠送</rcatch>
+<rmatch type="quote"></rmatch>
+<rmatch>套餐</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>包含数据流量</rmatch>
+<rcatch key="phonenetflow" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>截至</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>流量</rmatch>
+<rcatch key="r_phonenetflow" type="endwith" anymax="10">完毕</rcatch>
+<rmatch>[.。]</rmatch>
+<rmatch>办理流量包</rmatch>
+<rmatch type="sign" skip="true" optional="true">中国移动</rmatch>
+</mactchs>

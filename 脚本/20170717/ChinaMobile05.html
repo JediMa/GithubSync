@@ -1,0 +1,45 @@
+<mactchs id="43171426" reName="k_dayue">
+<!-- 尊敬的三星级客户，您好！截止2017年06月08日16时08分，您的话费余额为67.18元，当月话费8.57元。本月共有数据流量300.00MB，已使用60.50MB，剩余239.50MB（您定制的各项流量套餐使用详情请回复数字2查询）；语音套餐已使用30分钟，剩余0分钟；以上消费信息仅供参考，详情以月结账单为准。更多信息请回复对应序号（回复免费）：
+1、话费账单及积分查询；
+2、流量套餐查询与办理；
+3、其他套餐使用情况查询；
+4、包月业务查询与退订；
+5、家庭网、集团网信息查询；
+20、办理10元包100M流量加油包；
+21、办理30元包500M流量套餐；
+22、办理40元包700M流量套餐；
+23、办理50元包1G流量套餐。（6月考试季，欢乐送2G，关注“中国移动10086”官方微信公众号，点击我的福利，邀您一起助力高考，参与疯狂抽流量，欢乐赢大奖活动吧！）【中国移动】 -->
+<rmatch type="startwith" anymax="20">尊敬的</rmatch>
+<rmatch>截[止至]</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>[你您]的话费余额</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="balance" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>当月话费</rmatch>
+<rcatch key="realcalls" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="15">数据流量</rmatch>
+<rcatch key="totalnetflow" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>已使用</rmatch>
+<rcatch key="netflowused" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="netflowremain" type="netflow"/>
+<rmatch type="bracket"></rmatch>
+<rcatch key="warning" type="endwith" anymax="25">查询</rcatch>
+<rmatch type="bracket"></rmatch>
+<rmatch>[;；]</rmatch>
+<rmatch>语音套餐已使用</rmatch>
+<rcatch key="totalcalls" type="duration"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="callsremain" type="duration"/>
+<rmatch>[;；]</rmatch>
+<rmatch>以上消费信息</rmatch>
+</mactchs>

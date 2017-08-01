@@ -1,0 +1,41 @@
+<mactchs id="43171134" refName="k_dayue">
+<!-- 尊敬的客户：您的实时话费为0.00元；当前帐户总余额666.02元；当前可用余额666.02元:本地剩余30分钟，您当月手机流量共2190M，已使用1524.08M，剩余665.92M（回复1可查询剩余流量详细情况）。以上仅供参考；【查询及办理】回以下序号：
+^M1.查询剩余流量及套餐余量
+^M2.办理4G飞享套餐
+^M3.办理流量月套餐
+^M4.办理流量特惠包
+^M5.办理流量叠加包
+^M6.短号家庭网及集群网业务
+^M7.查询已办业务
+^M8.查询最新优惠
+^M0.寻找客服帮忙
+^M点击gd.10086.cn/8611 下载APP充值95折。【中国移动】 -->
+<rmatch type="startwith" anymax="20">尊敬的</rmatch>
+<rmatch>实时话费</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="realcalls" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[;；]</rmatch>
+<rmatch>当前[账帐]户总余额</rmatch>
+<rcatch key="balance" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[;；]</rmatch>
+<rmatch>当前可用余额</rmatch>
+<rcatch key="availablebalance" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch>本地剩余</rmatch>
+<rcatch key="r_localcalls" type="duration"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>[你您]当月手机流量共</rmatch>
+<rcatch key="totalnetflow" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>已使用</rmatch>
+<rcatch key="netflowused" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="netflowremain" type="netflow"/>
+<rmatch type="bracket"></rmatch>
+<rmatch>回复</rmatch>
+<rmatch type="sign" skip="true" optional="true">中国移动</rmatch>
+</mactchs>
