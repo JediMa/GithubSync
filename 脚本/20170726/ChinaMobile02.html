@@ -1,0 +1,26 @@
+<mactchs id="43261119" refName="k_tong,k_guotong,k_guonei3">
+<!-- 【流量提醒】您好！截至17年06月30日09时07分，您本月已使用移动数据流量2682.88MB，流量剩余3369.96MB，其中：国内通用流量剩余297.96MB，套外赠送本地流量剩余3072.00MB。以上结果仅供参考，实际收费请以账单为准。回复KTAXB订购流量安心包，套餐外流量每10元100MB，不足10元部分按照0.29元/MB收取。开通立即生效，不使用不收费。【中国移动】 -->
+<rmatch type="sign" optional="true">流量提醒</rmatch>
+<rmatch type="startwith" anymax="15">[你您]好</rmatch>
+<rmatch>截[止至]</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="10">已使用移动数据流量</rmatch>
+<rcatch key="u_cumulative" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>流量剩余</rmatch>
+<rcatch key="p_remain" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>其中</rmatch>
+<rmatch type="colon" optional="true"></rmatch>
+<rcatch key="package_domestic" type="startwith" anymax="10">国内通用</rcatch>
+<rmatch>剩余</rmatch>
+<rcatch key="p_r_domestic" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="package_gift_local" type="startwith" anymax="10">套外赠送本地</rcatch>
+<rmatch>剩余</rmatch>
+<rcatch key="p_r_giftlocal" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>以上</rmatch>
+</mactchs>

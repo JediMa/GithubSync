@@ -1,0 +1,17 @@
+<mactchs id="43261552" refName="k_tongyi,k_shenqing">
+<!-- 【饿了么】「米饭叔叔(家常小炒水饺)」同意了您的取消订单申请（订单号：101919686127701234）。已支付金额将会原路退回（使用红包支付部分会退回“我的红包”中）。 -->
+<rmatch type="sign" optional="true">饿了么</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="restaurant" type="string"/>
+<rmatch type="bracket"></rmatch>
+<rcatch key="state" type="endwith" anymax="15">取消订单申请</rcatch>
+<rmatch type="bracket"></rmatch>
+<rmatch>订单号</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="ordernum_arr" type="ordernum"/>
+<rmatch type="bracket"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="startwith" anymax="20">
+已支付金额将会原路退回</rcatch>
+<rmatch>[,.，。]</rmatch>
+</mactchs>
