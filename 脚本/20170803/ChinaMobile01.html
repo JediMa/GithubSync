@@ -1,0 +1,44 @@
+<mactchs id="44031120" refName="k_zun,k_jiezhi,k_yiju">
+<!-- 尊敬的客户：您好！截至7月15日18时29分，您本月移动数据流量已使用810.42MB，超出10.10MB，各项流量套餐准实时使用情况如下:
+1.流量统付省内通用流量2G/月（省内流量）：包含流量2.00GB，剩余流量1.32GB；
+2.产品必选优惠-送省内移动数据流量100M（区分上下半月）：包含流量100.00MB，剩余流量0.00MB；
+了解更多消费信息，点击 http://dx.10086.cn/RbuUja  【中国移动】 -->
+<rmatch type="startwith" anymax="15">尊敬的</rmatch>
+<rmatch>截[至止][到]?</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="10">移动数据流量已使用</rmatch>
+<rcatch key="u_cumulative" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>超出</rmatch>
+<rcatch key="p_o_charge" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>各项流量套餐准实时使用情况如下</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<rmatch>1</rmatch>
+<rmatch>[.、]</rmatch>
+<rcatch key="package_provincial" type="startwith" anymax="15">流量统付省内</rcatch>
+<rmatch type="colon"></rmatch>
+<rmatch>包含流量</rmatch>
+<rcatch key="p_provincial" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>剩余流量</rmatch>
+<rcatch key="p_r_provincial" type="netflow"/>
+<rmatch>[.。;；]</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch>2</rmatch>
+<rmatch>[.、]</rmatch>
+<rcatch key="package_gift_provincial" type="include">送省内移动数据流量</rcatch>
+<rmatch type="colon"></rmatch>
+<rmatch>包含流量</rmatch>
+<rcatch key="giftprovincial" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>剩余流量</rmatch>
+<rcatch key="r_giftprovincial" type="netflow"/>
+<rmatch>[.。;；]</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch>了解</rmatch>
+<rmatch type="sign" optional="true" skip="true">中国移动</rmatch>
+</mactchs>

@@ -1,0 +1,23 @@
+<mactchs id="44031412" defName="k_jiezhi,k_chaochu3,k_shuju">
+<!-- 【流量超量提醒】你好！截止7月12日23时3分，您7月已使用移动数据流量498.08MB，超出套餐外流量18.06MB费用5.23元，当前使用按照0.29元/M收费。4G套餐加量不加价，开通4G套餐请点击http://i139.cn/nq4Cls。中国移动【流量包免费用啦！发送6850到10086立享10元流量包体验活动（每月10元，含100M国内流量），连续两个月每月返还10元话费和100M省内流量！】 -->
+<rmatch type="sign">流量超量提醒</rmatch>
+<rmatch type="startwith" anymax="10">[你您]好</rmatch>
+<rmatch>截[至止][到]?</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="10">已使用移动数据流量</rmatch>
+<rcatch key="u_cumulative" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>超出套餐外流量</rmatch>
+<rcatch key="p_o_charge" type="netflow"/>
+<rmatch>费用</rmatch>
+<rcatch key="netflowoverfee" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>当前使用按照</rmatch>
+<rcatch key="overfed" type="money"/>
+<rcatch key="unit_overfed" type="specialunit"/>
+<rmatch>收费</rmatch>
+<rmatch>[.。]</rmatch>
+</mactchs>
