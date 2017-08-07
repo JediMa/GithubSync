@@ -1,0 +1,131 @@
+<rxml>
+<tunit name="中国银行信用卡账单" id="01003001" keyprefix="bank_cardbill_"> 
+<keywords>
+<include>对账单</include>
+</keywords>
+<owner>PersonalService@bank-of-china.com</owner>
+<type key="bankname">中国银行</type>
+
+
+<mactchs id="44071011">
+<tag
+    type="start"
+    name="table"
+    index="7"
+>
+<tag
+    type="start"
+    name="tr"
+    index="6"
+>
+<tag
+    type="start"
+    name="td"
+    index="1"
+>
+<rcatch key="owner" type="name"/>
+<rmatch type="space"></rmatch>
+<rmatch>先生|女士</rmatch>
+</tag>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="table"
+    index="2"
+>
+<tag
+    type="start"
+    name="td"
+    index="1"
+>
+<tag
+    type="start"
+    name="p"
+    index="1"
+    text="deep"
+>
+<rcatch key="cardnum" type="cardnum01"/>
+</tag>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="table"
+    index="6"
+>
+</tag>
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="td"
+    index="2"
+    text="deep"
+>
+<rcatch key="totalcreditmoney" type="money"/>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rcatch key="balance" type="money"/>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rcatch key="date" type="date"/>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rcatch key="curdate" type="date"/>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="table"
+    index="3"
+>
+</tag>
+
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="td"
+    index="5"
+>
+<tag
+    type="start"
+    name="p"
+    index="1"
+    text="deep"
+>
+<rmatch>欠款</rmatch>
+<rcatch key="curmoney1" type="money"/>
+</tag>
+</tag>
+</tag>
+
+</mactchs>
+</tunit>
+
+</rxml>
