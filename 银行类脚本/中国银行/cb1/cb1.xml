@@ -125,6 +125,33 @@
 </tag>
 </tag>
 
+<tag
+    type="start"
+    name="table"
+    index="6"
+>
+</tag>
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="td"
+    index="3"
+>
+<tag
+    type="start"
+    name="p"
+    index="1"
+>
+<rmatch type="endwith">CHN</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="moneytype1" type="moneytype"/>
+</tag>
+</tag>
+</tag>
 </mactchs>
 </tunit>
 
