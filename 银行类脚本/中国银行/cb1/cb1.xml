@@ -23,7 +23,7 @@
     name="td"
     index="1"
 >
-<rcatch key="owner" type="name"/>
+<rcatch key="owner" type="allword"/>
 <rmatch type="space"></rmatch>
 <rmatch>先生|女士</rmatch>
 </tag>
