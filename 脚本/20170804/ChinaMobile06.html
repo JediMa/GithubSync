@@ -1,0 +1,15 @@
+<mactchs id="44041550" refName="k_zun,k_jiezhuanliu">
+<!-- 尊敬的用户您好，您的结转流量情况如下：
+上月无套餐流量结转至本月。
+本月惠享套餐9元档内流量可结转至下月使用，如变更套餐，套餐内本月剩余流量无法结转至下月使用。【中国移动】 -->
+<rmatch type="startwith" anymax="10">尊敬的</rmatch>
+<rmatch>[你您]的结转流量情况如下</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="detail" type="endwith" anymax="15">结转至本月</rcatch>
+<rmatch>[.。]</rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="warning" type="startwith" anymax="15">本月惠享套餐</rcatch>
+<rcatch key="warning" type="startwith" anymax="20" concatTo="true">如变更套餐</rcatch>
+<rmatch type="sign">中国移动</rmatch>
+</mactchs>
