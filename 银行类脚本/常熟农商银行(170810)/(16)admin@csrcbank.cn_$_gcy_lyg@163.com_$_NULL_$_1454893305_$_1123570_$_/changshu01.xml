@@ -1,0 +1,156 @@
+<rxml>
+<tunit name="常熟农商银行信用卡账单" id="01003005" keyprefix="bank_cardbill_"> 
+<keywords>
+<include>账单</include>
+</keywords>
+<owner>admin@csrcbank.cn</owner>
+<type key="bankname">常熟农商银行</type>
+
+
+<mactchs id="44101205">
+
+<tag
+    type="start"
+    name="table"
+    index="2"
+>
+<tag
+    type="start"
+    name="tr"
+    index="5"
+>
+<tag
+    type="start"
+    name="span"
+    index="1"
+    text="deep"
+>
+<rmatch>尊敬的</rmatch>
+<rcatch key="owner" type="name"/>
+<rmatch>先生|女士|小姐</rmatch>
+</tag>
+</tag>
+
+<tag
+    type="match"
+    name="span"
+    text="deep"
+>
+本月信用卡账单
+</tag>
+
+<tag
+    type="start"
+    name="tr"
+    index="4"
+>
+<tag
+    type="start"
+    name="span"
+    index="1"
+    text="deep"
+>
+<rmatch>尾号</rmatch>
+<rcatch key="cardnum" type="number"/>
+<rmatch>卡片</rmatch>
+<rcatch key="date" type="undate"/>
+<rmatch>账户情况</rmatch>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="tr"
+    index="3"
+>
+<tag
+    type="start"
+    name="span"
+    index="1"
+    text="deep"
+>
+<rmatch>还款日</rmatch>
+</tag>
+<tag
+    type="start"
+    name="span"
+    index="1"
+    text="deep"
+>
+<rcatch key="curdate" type="date"/>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="tr"
+    index="3"
+>
+<tag
+    type="start"
+    name="span"
+    index="1"
+    text="deep"
+>
+<rmatch>应还金额</rmatch>
+</tag>
+<tag
+    type="start"
+    name="span"
+    index="1"
+    text="deep"
+>
+<rcatch key="curmoney1" type="money"/>
+<rcatch key="moneyunit1" type="moneyunit"/>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="span"
+    index="1"
+    text="deep"
+>
+<rmatch>最低还款额</rmatch>
+</tag>
+<tag
+    type="start"
+    name="span"
+    index="1"
+    text="deep"
+>
+<rcatch key="curlowmoney1" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+</tag>
+</tag>
+
+<tag
+    type="match"
+    name="span"
+    text="deep"
+>
+积分统计
+</tag>
+
+<tag
+    type="start"
+    name="tr"
+    index="2"
+>
+<tag
+    type="start"
+    name="span"
+    index="5"
+>
+<rcatch key="point" type="floatnum"/>
+</tag>
+</tag>
+</tag>
+</mactchs>
+</tunit>
+</rxml>
