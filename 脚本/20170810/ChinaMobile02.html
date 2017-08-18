@@ -1,0 +1,23 @@
+<mactchs id="44101536" refName="k_zun,k_jiezhi,k_qita1">
+<!-- 尊敬的15112478888客户，截至10日10时23分，您当月手机流量已超出套餐5M，套餐外流量按0.29元/M收费（如为极光宽带副号，套餐外使用主号流量）。以上信息可能存在延时，具体以详单为准。温馨提示：回复THB20即可办理20元1G省内流量特惠包（有效期7天），或回复DJB20即可办理20元300M国内通用流量叠加包（有效期至月结日），半小时内生效。更多信息查询及业务办理请点击 gd.10086.cn/cxll 。【中国移动】 -->
+<rmatch>尊敬的</rmatch>
+<rcatch key="phonenum" type="phone"/>
+<rmatch>客户</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>截[至止][到]?</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="10">已超出套餐</rmatch>
+<rcatch key="p_o_charge" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>套餐外流量按</rmatch>
+<rcatch key="overfed" type="money"/>
+<rcatch key="unit_overfed" type="specialunit"/>
+<rmatch>收费</rmatch>
+<rmatch type="bracket"></rmatch>
+<rcatch key="warning" type="startwith" anymax="25">如为</rcatch>
+<rmatch type="bracket"></rmatch>
+<rmatch>[.。]</rmatch>
+<rmatch>以上</rmatch>
+</mactchs>
