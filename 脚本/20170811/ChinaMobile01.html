@@ -1,0 +1,12 @@
+<mactchs id="44111537" refName="k_heji">
+<!-- 您从本月1日到08月02日的话费总额为118.10元。 -->
+<rmatch type="startwith" anymax="10">[你您]</rmatch>
+<rmatch>从</rmatch>
+<rcatch key="date" type="between"/>
+<rmatch>的话费总额</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="totalcharge" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[.。]</rmatch>
+<rmatch type="endsign"></rmatch>
+</mactchs>
