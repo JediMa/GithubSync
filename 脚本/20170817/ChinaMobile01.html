@@ -1,0 +1,41 @@
+<mactchs id="44171000" refName="k_guoneitong,k_shishi,k_hua">
+<!-- 本月实时话费18.10元，当前可用余额68.35元，4G飞享18套餐余27分钟，国内通用流量合计200.00M，已使用200.00M，剩余0.00M，省内通用流量合计3.40G，已使用889.49M，剩余2.52G。
+如需查询话费、流量使用进度，请点击：http://dx.10086.cn/scyjcx
+
+【四川移动掌上营业厅】每月500M流量红包免费领，流量办理8折起。点击下载：http://dx.10086.cn/sccdtx【中国移动】 -->
+<rmatch>本月实时话费</rmatch>
+<rcatch key="realcalls" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>当前可用余额</rmatch>
+<rcatch key="availablebalance" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="package_calls" type="startwith" anymax="10">4[gG]</rcatch>
+<rmatch>余</rmatch>
+<rcatch key="callsremain" type="duration"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="package_domestic" type="startwith" anymax="10">国内</rcatch>
+<rmatch>合计</rmatch>
+<rcatch key="p_domestic" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>已使用</rmatch>
+<rcatch key="p_u_domestic" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="p_r_domestic" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="package_provincial" type="startwith" anymax="10">省内</rcatch>
+<rmatch>合计</rmatch>
+<rcatch key="p_provincial" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>已使用</rmatch>
+<rcatch key="p_u_provincial" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="p_r_provincial" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch>如需</rmatch>
+<rmatch type="sign" skip="true" optional="true">中国移动</rmatch>
+</mactchs>

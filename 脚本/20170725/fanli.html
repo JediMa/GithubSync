@@ -1,0 +1,15 @@
+<mactchs id="43251406" refName="k_wuliu,k_fahuo">
+<!-- 【返利网】您在微商城购买的商品发货啦，邮政小包（国内）物流单号：9890958262145，请注意查收。 -->
+<rmatch type="sign" optional="true">返利网</rmatch>
+<rmatch type="startwith" anymax="15">[你您]在</rmatch>
+<rmatch>购买的</rmatch>
+<rcatch key="state" type="sentence"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="company_express" type="string"/>
+<rmatch>物流单号</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="trackingnum" type="ordernum"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="startwith" anymax="20">请注意</rcatch>
+<rmatch>[,.，。]</rmatch>
+</mactchs>

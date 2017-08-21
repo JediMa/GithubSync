@@ -1,0 +1,60 @@
+<mactchs id="44151452" refName="k_feiyong,k_qizhong,k_leixing">
+<!-- 您好，您号码13787724993本月（账期）实时话费28.93元，扣除实时话费后的当前余额193.10元，当前可用余额93.10元，预存未返还余额100.00元；当前可用积分975分，其中消费积分975分，促销积分0分；4G飞享套餐（28元）共50分钟数、已使用31分钟数、剩余19分钟数；您本月套餐及获赠流量4G426.47MB，已使用382.28MB，移动数据流量剩余4G44.19MB，省内数据流量剩余1G50.00MB,超出0.00MB，当月数据仅供参考。如需以下服务，请直接回复序号：
+1、查询当月账单
+2、开通流量套餐10元档（100M）
+3、开通流量套餐20元档（300M） -->
+<rmatch type="startwith" anymax="5">[你您]好</rmatch>
+<rmatch>[你您]号码</rmatch>
+<rcatch key="phonenum" type="phone"/>
+<rmatch type="endwith" anymax="10">实时话费</rmatch>
+<rcatch key="realcalls" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="10">当前余额</rmatch>
+<rmatch type="colon" optional="true"></rmatch>
+<rcatch key="balance" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,，]</rmatch>
+<rmatch type="endwith" anymax="5">可用余额</rmatch>
+<rcatch key="availablebalance" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="startwith" anymax="5">预存</rmatch>
+<rmatch>余额</rmatch>
+<rcatch key="advance" type="money"/>
+<rmatch type="moneyunit"></rmatch>
+<rmatch>[.。;；]</rmatch>
+<rmatch type="endwith" anymax="5">可用积分</rmatch>
+<rcatch key="availablepoint" type="numunit"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="detail" type="startwith" anymax="20">其中</rcatch>
+<rmatch>[.。;；]</rmatch>
+<rcatch key="package_calls" type="startwith" anymax="10">4[gG]</rcatch>
+<rmatch>共</rmatch>
+<rcatch key="totalcalls" type="duration"/>
+<rmatch>[,，、]</rmatch>
+<rmatch>已使用</rmatch>
+<rcatch key="callsused" type="duration"/>
+<rmatch>[,，、]</rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="callsremain" type="duration"/>
+<rmatch>[.。;；]</rmatch>
+<rmatch type="endwith" anymax="5">套餐及获赠流量</rmatch>
+<rcatch key="totalnetflow" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>已使用</rmatch>
+<rcatch key="netflowused" type="netflow"/>
+<rmatch type="endwith" anymax="10">流量剩余</rmatch>
+<rcatch key="u_cumulative" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="package_provincial" type="startwith" anymax="10">省内</rcatch>
+<rmatch>剩余</rmatch>
+<rcatch key="p_r_provincial" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>超出</rmatch>
+<rcatch key="overnetflow" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="endwith" anymax="10">仅供参考</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>如需</rmatch>
+</mactchs>
