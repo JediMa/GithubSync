@@ -1,0 +1,242 @@
+<rxml>
+<tunit name="云南农村信用社信用卡账单" id="01003005" keyprefix="bank_cardbill_"> 
+<keywords>
+<include>账单</include>
+</keywords>
+<owner>bankcardcenter@ynrcc.com</owner>
+<type key="bankname">云南农村信用社</type>
+
+
+<mactchs id="44221555">
+
+<tag
+    type="start"
+    name="font"
+    text="deep"
+>
+<rmatch>尊敬的</rmatch>
+<rcatch key="owner" type="allword"/>
+<rmatch type="space"></rmatch>
+<rmatch>先生|女士</rmatch>
+</tag>
+<tag
+    type="start"
+    name="table"
+    index="3"
+>
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="td"
+    index="1"
+>
+<tag
+    type="start"
+    name="font"
+    index="1"
+    text="deep"
+>
+<rmatch>信用额度</rmatch>
+</tag>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+>
+<tag
+    type="start"
+    name="font"
+    index="1"
+    text="deep"
+>
+<rcatch key="moneytype1" type="moneytype"/>
+<rmatch type="space"></rmatch>
+<rcatch key="totalcreditmoney" type="money"/>
+</tag>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="td"
+    index="1"
+>
+<tag
+    type="start"
+    name="font"
+    index="1"
+    text="deep"
+>
+<rmatch>现金额度</rmatch>
+</tag>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+>
+<tag
+    type="start"
+    name="font"
+    index="1"
+    text="deep"
+>
+<rmatch type="moneytype"></rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="withdrawals" type="money"/>
+</tag>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="tr"
+    index="3"
+>
+<tag
+    type="start"
+    name="td"
+    index="1"
+>
+<tag
+    type="start"
+    name="font"
+    index="1"
+    text="deep"
+>
+<rmatch>累计积分</rmatch>
+</tag>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+>
+<tag
+    type="start"
+    name="font"
+    index="1"
+    text="deep"
+>
+<rcatch key="point" type="money"/>
+</tag>
+</tag>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="table"
+    index="3"
+>
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rmatch>账单日</rmatch>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rcatch key="date" type="date"/>
+</tag>
+</tag>
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rmatch>应还款</rmatch>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rmatch type="moneytype"></rmatch>
+<rcatch key="curmoney1" type="money"/>
+</tag>
+</tag>
+</tag>
+
+<tag
+    type="start"
+    name="table"
+    index="1"
+>
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rmatch>到期还款日</rmatch>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rcatch key="curdate" type="date"/>
+</tag>
+</tag>
+<tag
+    type="start"
+    name="tr"
+    index="1"
+>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rmatch>最低还款</rmatch>
+</tag>
+<tag
+    type="start"
+    name="td"
+    index="1"
+    text="deep"
+>
+<rmatch type="moneytype"></rmatch>
+<rcatch key="curlowmoney1" type="money"/>
+</tag>
+</tag>
+</tag>
+</mactchs>
+</tunit>
+</rxml>
