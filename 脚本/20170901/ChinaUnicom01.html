@@ -1,0 +1,17 @@
+<mactchs id="45011612" refName="k_goumai,k_huoqu">
+<!-- 温馨提示：您将订购：北京爱捷讯10元口袋神算会员包月业务，订购页面中的验证码为123456，请输入并确认话费支付。 -->
+<rmatch type="startwith" anymax="5">温馨提示</rmatch>
+<rmatch>订购</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="detail" type="endwith" anymax="20">业务</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="startwith" anymax="10">订购</rmatch>
+<rcatch key="call">验证码|校验码|随机码</rcatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="verifycode" type="verifycode"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="5">确认</rmatch>
+<rcatch key="detail" type="endwith" anymax="5" concatTo="true">支付</rcatch>
+<rmatch>[.。]</rmatch>
+<rmatch type="endsign"></rmatch>
+</mactchs>
