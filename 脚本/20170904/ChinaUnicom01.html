@@ -1,0 +1,14 @@
+<mactchs id="45040937" refName="k_goumai">
+<!-- 【联通计费】您正在购买商品：微盟15元微币，验证码：1234，请勿向他人泄露验证码内容。 -->
+<rmatch type="sign" optional="true">联通计费</rmatch>
+<rmatch type="startwith" anymax="5">[你您]正在</rmatch>
+<rcatch key="detail" type="startwith" anymax="10">购买</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="call">验证码|校验码|动态码</rcatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="verifycode" type="verifycode"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="startwith" anymax="10">请勿</rcatch>
+<rmatch>[.。]</rmatch>
+<rmatch type="endsign"></rmatch>
+</mactchs>
