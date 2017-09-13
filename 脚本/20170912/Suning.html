@@ -1,0 +1,20 @@
+<mactchs id="45121127">
+<!-- 【苏宁】启禀主公，苏宁小将13661224967谨遵将令，您购买的碧然德(BRITA) 二代滤水壶净水器Maxtra滤芯6+2组合装等，共1件商品，已为您八百里加急派送，将于2016-11-17上午抵达主公府上，届时恭请主公亲自查验收件。主公若有代扔垃圾、包装回收的吩咐，末将也乐意效劳。苏宁小将对主公一片忠心，今后还望主公多多提携呦！ -->
+<rmatch type="sign" optional="true">苏宁|苏宁易购</rmatch>
+<rmatch type="startwith" anymax="10">启禀|[你您]好</rmatch>
+<rcatch key="phonenum" type="phone"/>
+<rmatch>谨遵将令</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>[你您]购买的</rmatch>
+<rcatch key="commodityname" type="endwith" anymax="40">商品</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch key="state" type="endwith" anymax="10">派送</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>将于</rmatch>
+<rcatch key="date_arrival" type="date"/>
+<rcatch key="date_arrival" type="untime" concatTo="true"/>
+<rmatch type="startwith" anymax="5">抵达</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="endwith" anymax="10">收件</rcatch>
+<rmatch>[.。]</rmatch>
+</mactchs>

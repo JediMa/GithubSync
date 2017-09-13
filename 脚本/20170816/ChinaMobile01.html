@@ -1,0 +1,19 @@
+<mactchs id="44161437" refName="k_jiezhi,k_mianfei1,k_hui1">
+<!-- 您好！截至03月28日11时19分，您的流量费用已达到20元，由于您享受流量安心服务，可以继续免费使用60.40MB，请放心使用。如需查询流量，可回复1173或拨打1008611，或下载手机营业厅，实时查询流量剩余情况！还有超值优惠等着您！下载地址https://app.10086.cn/d【中国移动】 -->
+<rmatch type="startwith" anymax="5">[你您]好</rmatch>
+<rmatch>截[至止][到]?</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,，]</rmatch>
+<rmatch>[你您]的流量费用已达到</rmatch>
+<rcatch key="overfed" type="money"/>
+<rcatch key="unit" type="moneyunit"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="startwith" anymax="15">由于</rcatch>
+<rcatch key="warning" concatTo="true">免费使用</rcatch>
+<rcatch key="p_o_free" type="netflow"/>
+<rcatch key="warning" type="endwith" anymax="5" concatTo="true">请放心使用</rcatch>
+<rmatch>[.。]</rmatch>
+<rmatch>如需</rmatch>
+<rmatch type="sign" skip="true" optional="true">中国移动</rmatch>
+</mactchs>

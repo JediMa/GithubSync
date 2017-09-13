@@ -1,0 +1,22 @@
+<mactchs id="44291833" refName="k_jiezhi,k_guotong,k_yu">
+<!-- 您好！截至到2017年08月21日11时31分，您已使用数据流量50.99MB，剩余流量49.02MB，其中：国内通用流量剩余49.02MB，感谢您使用流量查询服务。查询结果仅供参考，实际收费请以账单为准。使用北京移动手机营业厅随时查询流量，还可享充值9.98折、签到送百兆流量等优惠，欢迎点击 http://dx.10086.cn/app001 下载。中国移动 -->
+<rmatch type="startwith" anymax="5">[你您]好</rmatch>
+<rmatch>截[至止][到]?</rmatch>
+<rcatch key="date" type="date"></rcatch>
+<rcatch key="time" type="time"></rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch type="endwith" anymax="5">已使用</rmatch>
+<rmatch>数据流量</rmatch>
+<rcatch key="u_cumulative" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>剩余流量</rmatch>
+<rcatch key="p_remain" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>其中</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="package_domestic" type="startwith" anymax="10">国内</rcatch>
+<rmatch>剩余</rmatch>
+<rcatch key="p_r_domestic" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>感谢</rmatch>
+</mactchs>
