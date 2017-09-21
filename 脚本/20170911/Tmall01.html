@@ -1,0 +1,13 @@
+<mactchs id="45111530" refName="k_fahuo">
+<!-- 【天猫无忧购】您在heyan旗舰店购买的吊灯已发货，喵师傅将上门为您服务，请保存服务确认码0940371436，服务完成后提供给喵师傅服务人员。若在服务过程中遇到问题，请拨打4008816150，将有客服为您跟进解决 -->
+<rmatch type="sign">天猫无忧购</rmatch>
+<rmatch type="startwith" anymax="10">[你您]在</rmatch>
+<rmatch>购买的</rmatch>
+<rcatch key="commodityname" type="string"/>
+<rcatch key="state" type="startwith" anymax="15">已发货</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="startwith" anymax="20">请保存</rcatch>
+<rcatch key="warning" type="startwith" anymax="15" concatTo="true">服务完成后</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>若在</rmatch>
+</mactchs>

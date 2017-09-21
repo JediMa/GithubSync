@@ -1,0 +1,20 @@
+<mactchs id="45111741" refName="k_lianxi">
+<!-- 【天猫无忧购】您购买的吊灯已预约安装服务，时间为11月5日上午，请妥善保存服务确认码0270，并在服务完成后提供给喵师傅服务人员，喵师傅联系电话18701577195。若在服务过程中遇到问题，请拨打4008816150，将有客服为您跟进解决 -->
+<rmatch type="sign" optional="true">天猫无忧购|天猫</rmatch>
+<rmatch>[你您]购买的</rmatch>
+<rcatch key="commodityname" type="string"/>
+<rcatch key="state" type="startwith" anymax="5">已预约</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rmatch>时间</rmatch>
+<rmatch type="colon"/>
+<rcatch key="date_book" type="date"/>
+<rcatch key="time_book" type="untime"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="warning" type="startwith" anymax="10">请妥善保存</rcatch>
+<rcatch key="warning" type="endwith" anymax="15" concatTo="true">服务人员</rcatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="name_service" type="endwith" anymax="5">师傅</rcatch>
+<rmatch>联系电话</rmatch>
+<rcatch key="phonenum_arr" type="phone"/>
+<rmatch>[,.，。]</rmatch>
+</mactchs>
