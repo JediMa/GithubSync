@@ -1,0 +1,14 @@
+<mactchs id="45221100" refName="k_yuejie,k_tonghua1">
+<!-- 尊敬的客户：月结包含512000KB手机流量，30分钟国内（不含港澳台）通话时长。【中国移动】 -->
+<rmatch type="startwith" anymax="5">尊敬的</rmatch>
+<rmatch>月结包含</rmatch>
+<rcatch key="totalnetflow" type="netflow"/>
+<rmatch>手机流量</rmatch>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="domestic_maincalled" type="duration"/>
+<rcatch key="package_domestic_maincalled" type="startwith" anymax="10">国内</rcatch>
+<rcatch key="package_domestic_maincalled" type="startwith" anymax="5" concatTo="true">通话</rcatch>
+<rmatch>[.。]</rmatch>
+<rmatch type="sign" optional="true">中国移动</rmatch>
+<rmatch type="endsign"></rmatch>
+</mactchs>

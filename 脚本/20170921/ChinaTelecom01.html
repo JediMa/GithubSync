@@ -1,0 +1,39 @@
+<mactchs id="45211509" refName="k_guonei2,k_shegnyu">
+<!-- 温馨提醒:截至9月20日，您的套餐使用量如下：
+国内流量的总量为20M，还剩余20M。省内流量的总量为2048M，还剩余2048M。国内流量_共享的总量为4096M，还剩余4096M。回复：
+108 查套餐使用情况
+流流顺，您的流量贴身管家！下载地址：http://shop.sc.189.cn/66s -->
+<rmatch>温馨提醒</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch>截[止至][到]?</rmatch>
+<rcatch key="date" type="date"/>
+<rmatch>[,，]</rmatch>
+<rmatch>[你您]的套餐使用量如下</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="package_domestic">国内流量</rcatch>
+<rmatch>[的]?总量</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="p_domestic" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>[还]?剩余</rmatch>
+<rcatch key="p_r_domestic" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="package_provincial">省内流量</rcatch>
+<rmatch>[的]?总量</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="p_provincial" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>[还]?剩余</rmatch>
+<rcatch key="p_r_provincial" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rcatch key="package_share" type="endwith" anymax="5">共享</rcatch>
+<rmatch>[的]?总量</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="f_share" type="netflow"/>
+<rmatch>[,，]</rmatch>
+<rmatch>[还]?剩余</rmatch>
+<rcatch key="f_share_r" type="netflow"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>回复</rmatch>
+</mactchs>
