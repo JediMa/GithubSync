@@ -1,0 +1,70 @@
+<mactchs id="45051104" refName="k_particular,k_qunei,k_xianshi1">
+<!-- 【七夕流量包重磅来袭，回复510免费领1G，回复520免费领9G】尊敬的二星级客户，截至2017年08月28日 19点15分，本月套餐使用如下：
+一、上网类
+累计已使用国内移动数据上网流量：9GB930.00MB
+套餐剩余流量：14GB394.00MB
+其中:
+国内通用流量剩余：100.00MB
+闲时流量剩余：0.00MB
+区内流量剩余：100.00MB
+统付流量剩余：0.00MB
+超出后按照0.29元/M收取。
+二、其他类
+友情网资费套餐套餐包含语音3000分钟，剩余2601分钟。流量详情请回复1034了解。【中国移动】 -->
+<rmatch type="startwith" skip="true">尊敬的</rmatch>
+<rmatch>截[至止][到]?</rmatch>
+<rcatch key="date" type="date"/>
+<rcatch key="time" type="time"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>本月套餐使用如下</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<rmatch type="endwith" anymax="5">上网类</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch type="startwith" anymax="10">累[计积]已使用国内</rmatch>
+<rmatch>流量</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="u_cumulative" type="netflow"/>
+<rmatch type="space"></rmatch>
+<rmatch>套餐剩余流量</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="netflowremain" type="netflow"></rcatch>
+<rmatch type="space"></rmatch>
+<rmatch>其中</rmatch>
+<rmatch type="colon"></rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="package_domestic">国内通用流量</rcatch>
+<rmatch>剩余</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="p_r_domestic" type="netflow"/>
+<rmatch type="space"></rmatch>
+<rcatch key="package_idle" type="startwith" anymax="5">闲时</rcatch>
+<rmatch>剩余</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="r_idleprovincial" type="netflow"/>
+<rmatch type="space"></rmatch>
+<rcatch key="package_businessdistrict" type="startwith" anymax="5">区内</rcatch>
+<rmatch>剩余</rmatch>
+<rmatch type="colon"></rmatch>
+<rcatch key="netflow_bss_area_r" type="netflow"/>
+<rmatch type="space"></rmatch>
+<rcatch key="particular" type="startwith" anymax="15">统付流量</rcatch>
+<rmatch type="sapce"></rmatch>
+<rmatch>超出后按照</rmatch>
+<rcatch key="overfed" type="money"/>
+<rcatch key="unit_overfed" type="specialunit"/>
+<rmatch>收取</rmatch>
+<rmatch type="space"></rmatch>
+<rmatch type="endwith" anymax="5">其他类</rmatch>
+<rmatch type="space"></rmatch>
+<rcatch key="package_calls" type="startwith" anymax="5">友情网</rcatch>
+<rcatch key="package_calls" concatTo="true">套餐</rcatch>
+<rmatch>套餐包含</rmatch>
+<rcatch key="package_calls" concatTo="true">语音</rcatch>
+<rcatch key="totalcalls" type="duration"/>
+<rmatch>[,，]</rmatch>
+<rmatch>剩余</rmatch>
+<rcatch key="callsremain" type="duration"/>
+<rmatch>[,.，。]</rmatch>
+<rmatch>流量详情</rmatch>
+</mactchs>
